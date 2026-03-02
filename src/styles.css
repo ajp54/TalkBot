@@ -1,0 +1,230 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  /*margin: 20px;*/
+  padding: 0;
+  background-color: #272727;
+  margin: 0;
+  /* background-color:#32373B */
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 22px;
+  color: white;
+  font-size: 4rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.api-options {
+  max-width: 100%;
+}
+
+.api-options-entry {
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+  .api-options-entry h2 {
+    margin-bottom: 0;
+  }
+
+/* .api-options-entry:hover {
+  opacity: 0.8;
+} */
+
+.joke-container {
+  background-color: #F4D6CC
+}
+
+.trivia-container {
+  background-color: #F4B860
+}
+
+.fact-container {
+  background-color: #C83E4D
+}
+
+.text-container {
+  background-color: #f0f0f0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 40px;
+  border-radius: 12px;
+  position: relative;
+  margin: 35px 0 100px;
+}
+
+  .text-container::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid #f0f0f0;
+  }
+
+.answer-list {
+  width: fit-content;
+  text-align: start;
+}
+
+.typewriter pre {
+  /* display: inline-block; */
+  /* overflow: hidden; */
+  /* border-right: 0.15em solid orange; /* optional caret */
+  /* animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite; */
+  white-space: normal; /* allows wrapping */
+  /* width: 0ch; */
+}
+
+/* .typewriter button {
+  width: fit-content;
+  background-color: #C83E4D;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 6px;
+} */
+
+/* Adjust width over time in characters */
+@keyframes typing {
+  from {
+    width: 0ch
+  }
+
+  to {
+    width: 100ch
+  }
+  /* adjust based on max expected characters */
+}
+
+.expand-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 500ms;
+}
+
+  .expand-button.expanded {
+    transform: rotateZ(180deg);
+  }
+
+.button {
+  width: fit-content;
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 6px;
+  border: 2px solid black;
+  margin-top: 20px;
+  font-family: monospace;
+  color: black;
+}
+
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+
+.checkbox-wrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 700ms ease;
+}
+
+  .checkbox-wrapper.expanded {
+    max-height: 300px; /* or high enough to fit all content */
+  }
+
+.checkbox-container {
+  margin-top: 20px;
+  text-align: start;
+}
+
+@media(max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 25px;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+
+  .text-container {
+    padding: 12px 20px;
+    margin: 25px 0 100px;
+  }
+
+  .api-options-entry {
+    padding: 20px 15px;
+  }
+}
